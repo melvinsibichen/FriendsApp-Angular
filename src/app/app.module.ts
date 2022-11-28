@@ -8,6 +8,7 @@ import { ViewfriendsComponent } from './viewfriends/viewfriends.component';
 import { SearchfriendsComponent } from './searchfriends/searchfriends.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const myRoutes:Routes=[
   {
@@ -35,7 +36,8 @@ const myRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
